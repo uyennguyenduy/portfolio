@@ -1,0 +1,187 @@
+:root {
+  --main: #34568B;
+  --ndmain: #9BB7D4;
+  --neutral: #F0EAD6;
+}
+/*general*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+a, .router {
+  text-decoration: none;
+}
+a:hover, .router:hover {
+  filter: brightness(50%);
+}
+
+/*icon*/
+.icon-social {
+  background-color: var(--ndmain);
+  color: white;
+  padding: 7px;
+  margin-left: 8px;
+  box-shadow: 3px 5px 5px black;
+}
+.icon-social:hover {
+  box-shadow: 0 1px 5px black;
+}
+/*footer*/
+.footer-part1 {
+  background-image: url("./css/footer1.jpg");
+  background-size: cover;
+  margin-top: 1em;
+  padding: 2em;
+}
+.footer-part1 div {
+  background-color: rgba(230, 222, 222, 0.541);
+  text-align: center;
+  width: 70vw;
+  padding: 2em;
+  margin: auto;
+}
+.footer-part2 {
+  background-image: url("./css/footer.jpg");
+  background-size: cover;
+  margin-top: 1em;
+  padding: 2em;
+  color: white;
+}
+.footer-part2 .name{
+  background-color: white;
+  color: black;
+  padding: 1.em;
+  font-size: 2em;
+  font-weight: 900;
+  mix-blend-mode: screen;
+}
+/*home*/
+.section-jobs {
+  background-color: var(--ndmain);
+  padding-bottom: 30px;
+  margin-top: 30px;
+  
+}
+.section-skills {
+  width: 70vw;
+  border: 5px solid grey;
+  padding: 2em;
+  margin-top: -60px;
+  position: relative;
+  left: 50%;
+  bottom: -40px;
+  transform: translate(-50%,0);
+}
+.section-skills h2 {
+  text-align: right;
+  border-right: 3px solid grey;
+  padding-right: 1.25rem;
+}
+@media screen and (max-width: 600px) {
+  .section-skills {
+    width: 90vw;
+    text-align: center;
+  }
+  .section-skills h2 {
+    text-align: center;
+    border: none;
+  }
+}
+.section-works div:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.section-works h6 {
+  width: 15em;
+  padding: 1em;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: -20px;
+  transform: translate(-50%, 0);
+}
+/*about*/
+.banner-object1 {
+  background-color: var(--neutral);
+  width: 75vw;
+  height: 65vh;
+}
+.banner-object2 {
+  width: 90%;
+  border: 5px ridge white;
+  padding: 10px;
+  position: relative;
+  top: -40%; 
+  left: 10%;
+  background-color: white;
+}
+.banner-object3 {
+  background-color: var(--ndmain);
+  color: white;
+  padding: 8px;
+  position: relative;
+  top: 15%;
+}
+.section-info {
+  position: relative;
+  margin-top: -200px;
+}
+.section-experience h2 {
+  font-weight: 800;
+  color: var(--main);
+  margin-top: -50px;
+}
+.section-experience span {
+  font-size: 1.25em;
+  background-color: var(--neutral);
+  padding: 5px;
+}
+.section-education h2 {
+  font-weight: 800;
+  color: var(--main);
+  margin-top: 20px;
+  
+}
+.section-education span {
+  font-size: 1.25em;
+  background-color: var(--neutral);
+  padding: 5px;
+}
+@media screen and (max-width: 768px) {
+  .banner-object1 {
+    height: 40vh;
+  }
+  .banner-object3 {
+    top: -220%;
+  }
+  .section-info {
+    margin-top: -170px;
+  }
+  .section-experience h2 {
+    margin: 20px;
+  }
+}
+
+
+/*contact*/
+.section-contact {
+  column-count: 2;
+  text-align: justify;
+  background-color: var(--main);
+  color: white;
+  margin-top: -200px;
+  padding-top: 1.25em;
+  
+}
+.section-contact h2 {
+  column-span: all;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 3em;
+}
+@media screen and (max-width: 768px) {
+  .section-contact {
+    column-count: 1;
+  }
+}
